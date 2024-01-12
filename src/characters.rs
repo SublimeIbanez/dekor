@@ -91,3 +91,29 @@ impl std::fmt::Display for Utf8 {
         }
     }
 }
+
+impl Utf8 {
+    /// Repeats the character representation of the enum variant `n` times.
+    ///
+    /// # Arguments
+    ///
+    /// * `n` - The number of times to repeat the character.
+    ///
+    /// # Examples
+    ///
+    /// Basic usage:
+    ///
+    /// ```
+    /// use dekor::characters::Utf8;
+    ///
+    /// let repeated_arrow = Utf8::ModLetterLeftArrowhead.repeat(3);
+    /// assert_eq!(repeated_arrow, "˂˂˂");
+    ///
+    /// let repeated_pipe = Utf8::VPipeSlim.repeat(4);
+    /// assert_eq!(repeated_pipe, "││││");
+    /// ```
+    ///
+    pub fn repeat(&self, n: usize) -> String {
+        std::iter::repeat(self.to_string()).take(n).collect()
+    }
+}

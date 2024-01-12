@@ -12,6 +12,7 @@ Simple to use general character and styling library for Rust.
 - `Utf8` enum contains various UTF-8 characters
   - Intention is to complete the list of characters - this will be accomplished over time
   - Character list source: <https://www.fileformat.info/info/charset/UTF-8/list.htm>
+  - Implements `Display` and has the function `.repeat(n)` where `n` is `usize`
 
 ## Getting Started
 To start using Dekor, add the following to your `Cargo.toml`:
@@ -45,6 +46,20 @@ fn main() {
 ![OutputExample](OutputExample.png)
 - Characters: `Utf8::VPipeSlim`, `Utf8::JointPipeSlim`, `Utf8::NodePipeCurved`, `Utf8::HPipeSlim`, and `Utf8::ModLetterDownArrowhead`
 - Styles: `FGBlue`, `Bold`
+
+![OutputExample2](OutputExample2.png)
+```rust
+use dekor::*;
+
+fn main() {
+  let folder = style!(FGBlue, Bold => "Folder"); // Style the folder
+  let down_arrow = style!(Bold, FGGreen => Utf8::ModLetterDownArrowhead); // Style the open/close indicator
+  let hpipe = Utf8::HPipeSlim.repeat(2); // `Utf8` implements `Display` and `.repeat()`
+  println!("{}\n{}{}[{}]{}",
+    Utf8::VPipeSlim, Utf8::JointPipeSlim, hpipe, down_arrow, folder
+  );
+}
+```
 ## Goals
 - [x] Create a macro which allows for text styling
 - [ ] Allow for handling RGB and Hex inputs
