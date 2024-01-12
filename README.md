@@ -43,6 +43,8 @@ fn main() {
 ```
 ### Example Output:
 ![OutputExample](OutputExample.png)
+- Characters: `Utf8::VPipeSlim`, `Utf8::JointPipeSlim`, `Utf8::NodePipeCurved`, `Utf8::HPipeSlim`, and `Utf8::ModLetterDownArrowhead`
+- Styles: `FGBlue`, `Bold`
 ## Goals
 - [x] Create a macro which allows for text styling
 - [ ] Allow for handling RGB and Hex inputs
