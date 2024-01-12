@@ -41,6 +41,7 @@ fn main() {
   println!("{}\n{}", decorated_text, pipes);
 }
 ```
+### Example Output:
 ![OutputExample](OutputExample.png)
 ## Goals
 - [x] Create a macro which allows for text styling
