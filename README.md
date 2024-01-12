@@ -41,7 +41,7 @@ fn main() {
   println!("{}\n{}", decorated_text, pipes);
 }
 ```
-![[OutputExample.png]]
+![OutputExample](OutputExample.png)
 ## Goals
 - [x] Create a macro which allows for text styling
 - [ ] Allow for handling RGB and Hex inputs
