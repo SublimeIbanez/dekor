@@ -8,7 +8,7 @@ Simple to use general character and styling library for Rust.
 - `style!()` macro which can be used to:
   - Generate a styled string for console output using `ansi` codes
   - Colors the text forground and background depending on passed parameters
-  - Can bold, underline, and italicize the text as desired
+  - Can **bold**, <u>underline</u>, and *italicize* the text as desired and in any combination
 - `Utf8` enum contains various UTF-8 characters
   - Intention is to complete the list of characters - this will be accomplished over time
   - Character list source: <https://www.fileformat.info/info/charset/UTF-8/list.htm>
