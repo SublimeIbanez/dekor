@@ -44,6 +44,11 @@
 pub mod style;
 pub mod characters;
 
+pub use style::HexError;
+pub use style::as_rgb;
+pub use style::to_rgb;
+pub use style::style;
+pub use style::styler;
 pub use style::Style;
 pub use characters::Utf8;
 

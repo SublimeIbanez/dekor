@@ -1,12 +1,12 @@
 [package]
 name = "dekor"
-version = "0.1.0"
+version = "0.2.0"
 authors = [ "Joshua Benn" ]
 description = "Simple styling and character repository in Rust"
 license = "MIT"
 repository = "https://github.com/JoshBenn/dekor"
 keywords = [ "utf-8", "characters", "text-styling", "terminal", "console" ]
-categories = [ "utilities", "macros", "command-line-utilities", "text-processing", "no-std" ]
+categories = [ "utilities", "macros", "command-line-utilities", "text-processing", "development-tools::console" ]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
