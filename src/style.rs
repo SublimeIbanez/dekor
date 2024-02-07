@@ -25,7 +25,7 @@
 /// println!("\x1b[{}mBold Text\x1b[0m", text_style);
 /// ```
 ///
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Debug)]
 pub enum Style {
     Reset       = 0,
     Bold        = 1,

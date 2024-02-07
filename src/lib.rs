@@ -18,7 +18,7 @@
 //! To start using Dekor, add the following to your `Cargo.toml`:
 //! ```toml
 //! [dependencies]
-//! dekor = "0.2.1"
+//! dekor = "0.2.2"
 //! ```
 //! - Minimum supported Rust version: `1.56.1`
 //! ## Usage

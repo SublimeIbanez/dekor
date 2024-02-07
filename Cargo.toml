@@ -1,6 +1,6 @@
 [package]
 name = "dekor"
-version = "0.2.1"
+version = "0.2.2"
 authors = [ "Joshua Benn" ]
 description = "Simple styling and character repository in Rust"
 license = "MIT"
